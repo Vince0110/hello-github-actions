@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+class DisplayEnteredVariables{ 
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String name;
+        int age;
+        double height;
+        boolean married;
+        char letter;
+        
+        System.out.print("Enter a name, age, height, marital status, and a favourite letter: ");
+        name = sc.next();
+        age = sc.nextInt();
+        height = sc.nextDouble();
+        married = sc.nextBoolean();
+        letter = sc.next().charAt(0);
+        
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Height: " + height);
+        System.out.println("Married? " + married);
+        System.out.println("Fav. letter: " + letter);
+    }
+}
+        
